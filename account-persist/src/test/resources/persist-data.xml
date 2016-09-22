@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<account-persist>
+	<accounts>
+		<account>
+			<id>sweetop</id>
+			<name>Sweetop Wu</name>
+			<email>sweetop@189.cn</email>
+			<password>123456789</password>
+			<activated>true</activated>
+		</account>
+	</accounts>
+</account-persist>
