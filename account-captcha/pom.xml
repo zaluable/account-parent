@@ -5,23 +5,28 @@
 		<groupId>com.juice.orange.account</groupId>
 		<artifactId>account-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-<!-- 		<relativePath>../account-parent/pom.xml</relativePath> -->
 	</parent>
+	<artifactId>account-captcha</artifactId>
+	<name>Account Captcha</name>
 
-	<artifactId>account-persist</artifactId>
-	<packaging>jar</packaging>
-	<name>Account Persist</name>
 
 	<properties>
-		<dom4j.version>1.6.1</dom4j.version>
+		<kaptcha.version>2.3</kaptcha.version>
 	</properties>
 
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/com.google.code.kaptcha/kaptcha -->
+		<!-- https://mvnrepository.com/artifact/com.google.code.kaptcha/kaptcha -->
+		<dependency>
+			<groupId>com.google.code.kaptcha</groupId>
+			<artifactId>kaptcha</artifactId>
+			<version>2.3</version>
+		</dependency>
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
@@ -36,29 +41,5 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/dom4j/dom4j -->
-		<dependency>
-			<groupId>dom4j</groupId>
-			<artifactId>dom4j</artifactId>
-			<version>${dom4j.version}</version>
-		</dependency>
 	</dependencies>
-	<build>
-		<testResources>
-			<testResource>
-				<directory>src/test/resources</directory>
-				<filtering>true</filtering>
-			</testResource>
-		</testResources>
-<!-- 		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-resources-plugin</artifactId>
-			</plugin>
-		</plugins> -->
-	</build>
 </project>
